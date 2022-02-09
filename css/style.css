@@ -1,0 +1,204 @@
+:root {
+  --header-text-color: #ffffff;
+  --first-btn-color: #ffffff;
+  --second-btn-color: #303030;
+  --accent-color: #ff6c00;
+  --first-title-color: #ffffff;
+  --second-title-color: #303030;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ---------------HEADER --------------*/
+
+.header {
+  background-color: gray;
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+/* .header-link:focus {
+  color: var(--accent-color);
+} */
+
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-text-color);
+}
+
+.header-btn {
+  color: var(--first-btn-color);
+}
+
+/* ---------------HERO --------------*/
+
+.hero {
+  background-color: gray;
+}
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.hero-link:hover {
+  color: var(--accent-color);
+}
+
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: var(--first-title-color);
+}
+
+.hero-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* ---------------ABOUT --------------*/
+
+.about-pre-title {
+  color: #303030;
+}
+
+.about-title {
+  color: #303030;
+}
+
+.about-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about-btn {
+  color: var(--second-btn-color);
+}
+
+/* ---------------PRICES --------------*/
+
+.prices {
+  background-color: var(--second-title-color);
+}
+
+.prices-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: var(--first-title-color);
+}
+
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.prices-btn {
+  color: var(--first-btn-color);
+}
+
+/* ---------------REASONS --------------*/
+
+.reasons-item-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.reasons-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+
+.reasons-pre-title {
+  color: #303030;
+}
+
+.reasons-title {
+  color: var(--second-title-color);
+}
+
+.reasons-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+
+  letter-spacing: 0.02em;
+  color: #555555;
+}
