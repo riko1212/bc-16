@@ -55,7 +55,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -118,9 +117,11 @@ body {
 
 /* ---------------HEADER --------------*/
 .header {
-  background-color: gray;
+  position: absolute;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
+  left: 0;
 }
 
 .header-link {
@@ -129,11 +130,23 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--header-text-color);
+  position: relative;
 }
 
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+}
+
+.header-link.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  background-color: var(--accent-color);
+  left: 0;
+  bottom: -48px;
 }
 
 /* .header-link:focus {
@@ -195,8 +208,32 @@ body {
   display: flex;
 }
 
-.hero-list {
+.hero-soc {
   width: 93px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 24px;
+  padding-bottom: 40px;
+}
+
+.hero-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-right: 40px;
+}
+
+.hero-item + .hero-item {
+  margin-left: 40px;
+}
+
+.hero-list {
+  display: flex;
+  align-items: center;
+
+  transform: rotate(-90deg) translate(-18px);
+  transform-origin: top left;
 }
 .hero-link {
   font-weight: 600;
@@ -533,7 +570,7 @@ body {
 
 .masters-list {
   display: flex;
-  /* margin-left: -30px; */
+  margin-left: -30px;
   margin-bottom: -30px;
   flex-wrap: wrap;
 }
@@ -543,6 +580,30 @@ body {
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
   /* width: calc((100% - 120px) / 4); */
+}
+
+.masters-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.masters-top-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  line-height: 1.5;
+  font-weight: 600;
+  padding: 40px;
+  background-color: #ff6a00ac;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms;
+  overflow: auto;
+}
+
+.masters-item:hover .masters-top-text {
+  transform: translateY(0);
 }
 
 .masters-item:last-child {
