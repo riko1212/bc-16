@@ -383,5 +383,101 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close">X</button>
+        <p class="modal-title">Заголовок модального окна</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Введите имя</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                placeholder="Введите имя"
+                required
+                minlength="2"
+                id="user-name"
+              />
+
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label class="modal-label" for="user-email">Введите почту</label>
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              placeholder="Введите почту"
+              id="user-email"
+            />
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel">Введите телефон</label>
+            <input
+              type="date"
+              class="modal-input"
+              name="user-tel"
+              placeholder="Введите телефон"
+              required
+              title="+ 380(98) 111-11-11"
+              id="user-tel"
+            />
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-text">Введите телефон</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Коммент"
+              class="modal-text"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-check visually-hidden"
+            />
+            <label for="policy" class="modal-check-text"
+              ><span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Важная политика пользования</label
+            >
+          </div>
+          <!-- <fieldset>
+            <legend>Size</legend>
+            <label for="big-size">XL</label>
+            <input type="radio" id="big-size" name="size" value="big size" />
+            <label for="small-size">L</label>
+            <input
+              type="radio"
+              id="small-size"
+              name="size"
+              value="small size"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Add</legend>
+            <label for="cheese">cheese</label>
+            <input type="checkbox" id="cheese" name="add" value="cheese" />
+            <label for="tomato">tomato</label>
+            <input type="checkbox" id="tomato" name="add" value="tomato" />
+          </fieldset> -->
+          <button type="submit">submit</button>
+          <button type="reset">clear</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
