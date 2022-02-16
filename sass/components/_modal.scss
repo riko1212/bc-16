@@ -1,0 +1,144 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3030307b;
+  position: fixed;
+  top: 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  width: 500px;
+  min-height: 500px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #303030;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  .modal-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.modal-input {
+  height: 45px;
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    color: tomato;
+  }
+}
+
+.modal-input,
+.modal-text {
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  background-color: transparent;
+  padding-left: 30px;
+  padding-right: 10px;
+  font-size: 14px;
+  color: teal;
+}
+
+.modal-text {
+  height: 100px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.modal-label {
+  font-size: 12px;
+  color: #999999;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-check-text {
+  font-size: 14px;
+  color: #999999;
+  display: flex;
+}
+
+.check-icon {
+  fill: transparent;
+  .modal-check:checked + .modal-check-text & {
+    fill: #ffffff;
+  }
+}
+
+.modal-check-text span {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 2px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal-check:checked + & {
+    background-color: var(--accent-color);
+    border: none;
+  }
+}
+
+/* .modal-check-text::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.modal-check:checked + .modal-check-text::before {
+  background-color: var(--accent-color);
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+} */
