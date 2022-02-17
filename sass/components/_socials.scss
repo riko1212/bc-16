@@ -1,0 +1,35 @@
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item + .socials__item {
+  margin-left: 10px;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  background-color: tomato;
+  border-radius: 50%;
+  @extend %align-list;
+  justify-content: center;
+  fill: #ffffff;
+  &:hover {
+    background-color: teal;
+    fill: tomato;
+  }
+}
+
+/* .socials__icon {
+  fill: currentColor;
+} */
+
+/* ------------------------------------------- */
+/* .socials__ink:hover {
+  background-color: teal;
+}
+
+.socials__link:hover .socials__icon {
+  fill: tomato;
+} */

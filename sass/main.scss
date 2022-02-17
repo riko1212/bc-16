@@ -2,12 +2,15 @@
 @import "./base/reset";
 @import "./base/common";
 @import "./utils/hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 @import "./components/container";
 @import "./components/btn";
 @import "./components/title";
 @import "./components/pre-title";
 @import "./components/modal";
+@import "./components/socials";
 
 @import "./layout/header";
 @import "./layout/hero";
