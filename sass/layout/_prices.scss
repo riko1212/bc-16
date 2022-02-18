@@ -1,13 +1,21 @@
 .prices {
   background-color: #111319;
   background-image: url(../img/prices-bg.png);
-  padding-top: 130px;
-  padding-bottom: 130px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1280px;
   margin: 0 auto;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .prices__pre-title {
@@ -20,21 +28,41 @@
 }
 
 .prices-wrap {
-  display: flex;
+  // display: flex;
+  padding: 30px;
   margin-bottom: 50px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  @include desk {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
 }
 
 .prices-list {
-  padding: 30px 40px;
+  // padding: 30px 40px;
   flex-grow: 1;
+  padding: 0;
+  @include desk {
+    padding: 30px 40px;
+  }
 }
 
 .prices-list--light {
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  // background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  margin-bottom: var(--typical-margin);
+  @include desk {
+    margin: 0;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
 }
 
 .prices-list--dark {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  // background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  @include desk {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .prices-list__item {
@@ -56,11 +84,17 @@
 }
 
 .prices-list__text {
-  font-size: 18px;
-  line-height: 1.67;
+  // font-size: 18px;
+  // line-height: 1.67;
+  font-size: 14px;
+  line-height: calc(30 / 14);
   letter-spacing: 0.02em;
 
   color: #9da4bd;
+  @include tab {
+    font-size: 18px;
+    line-height: 1.67;
+  }
   &:first-child {
     order: -1;
   }
