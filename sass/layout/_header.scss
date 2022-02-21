@@ -110,11 +110,18 @@
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+  transition: left 300ms, opacity 300ms, visibility 300ms;
   .container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+
+.mob-menu {
+  &.is-hidden {
+    left: 100%;
   }
 }
 
