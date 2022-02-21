@@ -39,7 +39,7 @@
     margin-right: 30px;
   }
   @include desk {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 4 - 30px);
   }
 }
 

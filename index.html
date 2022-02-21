@@ -22,10 +22,12 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a href="" class="header__logo logo">
-          <img src="./img/logo.svg" alt="лого сайта" />
+          <svg class="header__logo-icon" width="69" height="55">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
         </a>
         <nav class="header-nav">
           <ul class="site-nav list">
@@ -51,10 +53,58 @@
             Онлайн-запись
           </button>
         </div>
+        <button type="button" class="open-menu-btn">
+          <svg class="open-menu-btn__icon" width="40" height="40">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="close-menu-btn">X</button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list__item">
+                <a href="" class="mob-menu-list__link link current">О нас</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="" class="mob-menu-list__link link">Услуги и цены</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="#masters" class="mob-menu-list__link link">Мастера</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="" class="mob-menu-list__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-menu-connect">
+              <a class="mob-menu-connect__tel link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <button type="button" class="mob-menu-connect__btn btn">
+                Онлайн-запись
+              </button>
+            </div>
+            <ul class="list mob-menu-soc">
+              <li class="mob-menu-soc__item">
+                <a href="" target="_blank" class="link mob-menu-soc__link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" target="_blank" class="link mob-menu-soc__link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <div class="hero-soc">
             <ul class="list soc-list">
@@ -86,7 +136,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <!-- <section class="about">
         <div class="container about__container">
           <ul class="list about-list">
             <li class="about-list__item">
@@ -340,6 +390,73 @@
           <h2 class="visually-hidden">галерея</h2>
           <ul class="list gallery-list">
             <li class="gallery-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/gallery-img-1.jpeg    1x,
+                    ./img/gallery-img-1-2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-img-1.jpeg    1x,
+                    ./img/gallery-img-1-2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-img-1-tab.jpeg    1x,
+                    ./img/gallery-img-1-tab-2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-img-1-mob.jpeg    1x,
+                    ./img/gallery-img-1-mob-2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/gallery-img-1.jpeg"
+                  alt="барбер стрижет клиента"
+                />
+              </picture>
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-1.jpeg"
+                alt="барбер стрижет клиента"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-1.jpeg"
+                alt="барбер стрижет клиента"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-1.jpeg"
+                alt="барбер стрижет клиента"
+                width="270"
+                height="360"
+              />
+            </li>
+            <!-- <li class="gallery-item">
+              <img
+                src="./img/gallery-img-1.jpeg"
+                alt="барбер стрижет клиента"
+                width="270"
+                height="360"
+              />
+            </li> -->
+            <!-- <li class="gallery-item">
               <img
                 src="./img/gallery-img-1.jpeg"
                 alt="барбер стрижет клиента"
@@ -370,47 +487,7 @@
                 width="270"
                 height="360"
               />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./img/gallery-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./img/gallery-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./img/gallery-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./img/gallery-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./img/gallery-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -551,5 +628,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
